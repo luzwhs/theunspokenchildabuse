@@ -1,0 +1,260 @@
+
+/*css reset, and when do so, per Cira remove font size, and all will be reset. Found youtube from code cascade that show's how to do. */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background-color:  #ccffb3;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+    footer{
+        height:4%;
+    }
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---end of css reset. took out font-size 100%. Should I also take out font inherit?---*/
+
+ 
+#container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+ 
+}
+
+#logo {
+    position: relative;
+    width: 960px; 
+    padding-top: 23px;   
+    padding-bottom: 18px;
+    font-family: 'Niconne', cursive;
+    text-align: center;
+    color:#ffb3b3 ; 
+    font-size: 71px;  
+    font-weight: 500;
+    line-height: 60px;  
+}
+
+#banner {
+    width: 960px;
+    height: 263px;  
+    z-index: 1;
+    background-color: blue;
+    margin: 0 auto; 
+}
+
+#banner > img {
+    display: block;
+    position: relative;
+    margin: 18px 24px 16px 24px;  
+    border: 5px solid orange;
+    border-radius: 12px;
+    float: left;
+}
+
+.banner-quote {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px; 
+    float: right;
+    margin-right: 18px;  
+    color: orange;   
+    background-color: blue;  
+}
+
+
+
+.nav {
+     width: 960px;  /* orig width 945. upping to 960px */
+     position: relative; 
+     text-align: center; 
+     display: inline-block;
+     margin-top: 3px; /* added margin top. wanna stop for now to check index page and see how nav size looks */
+    margin-left: 6px;
+    margin-bottom: 12px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    border-radius: 38px;
+    background-color: yellow;
+}
+
+.nav > ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li { 
+    text-align: center;
+    font-weight: 800; 
+    font-size: 19px;
+    border:3px dotted red;
+    border-radius: 25px; 
+    padding: 2px 13px 3px 13px;
+    display: inline-block;
+    background-color: white;
+   
+ 
+}
+
+.nav > li > a { 
+
+    text-decoration: none;
+    display: block;
+    width: 180px; /* am adjusting this a few other things in nav area to balance out look */ /*orig says 150 */
+    height:30px;
+    text-align: center; 
+    line-height: 1.5em;
+    color: blue;
+    border-radius: 25px; 
+ 
+ .nav > li> a:hover { 
+    color: purple;
+    font-weight: 600;
+    background-color: orange;
+}
+
+aside {
+    width:680px; 
+     position: relative;
+     height: 550px;
+    /* margin-top: 5px;
+     margin-right: 19px;
+     margin-bottom: 7px;
+     float: right;
+     padding: 16px 16px;  
+     border-radius: 17px;
+    
+}
+
+.hello {
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+}
+
+.intro  {
+    background-color: #F7f1EF; 
+    width: 550px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 20px;
+    border-radius: 17px;
+}
+
+.intro > p {
+    padding: 8px 10px;
+}
+
+/* ---- BEGINNING OF resources SECTION ---- */
+
+.poker-table {
+    background-color:white;  /*not keeping this color. i want to see what pops up */
+}
+
+#menu {
+    font-size: 44px;
+    text-align: center;
+    margin: 3px;
+    font-family: 'Niconne', cursive;
+    padding: 3px 0 3px 0;
+    background-color: orange;
+    color: blue;
+    border-radius: 12px;
+}
+
+
+.menu-section {   
+  margin-bottom: 20px;
+  padding: 3px 10px ;
+  background-color:#F7f1EF;
+}
+
+.menu-section-title {
+  font-size: 26px;
+  color: purple;
+  display: block;
+  font-weight:bold;
+  margin: 20px 0;
+  text-align: Center;
+  background-color:orange;  
+  
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+  background-color:yellow;  
+  line-height:2.8em;
+}
+
+.menu-item-name{
+  font-weight: bold;
+  color: purple;
+ margin-top:2px;
+ margin-bottom:;
+}
+
+.menu-item-description {
+  font-size: 14px;
+  line-height: 1.8em;
+  margin: 2px;
+}
+
+
+h3{
+    background-color: #88a66a; 
+}
+
+footer { 
+   width: 960px;
+   text-align: center;
+   padding-top:16px;
+   padding-bottom:16px;
+  
+}
+
+/* ---- END OF resources PAGE ---- */
+
